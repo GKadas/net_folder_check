@@ -3,7 +3,7 @@ from win_unc import (DiskDrive, UncDirectory,
                      UncDirectoryConnection, UncDirectoryMount)
 
 # Connect a shared directory without authorization.
-unc = UncDirectory(r'\\atlas\Internal_Auditing')
+unc = UncDirectory(r'\\path\to\file')
 conn = UncDirectoryConnection(unc, persistent=True)
 
 while (True):
